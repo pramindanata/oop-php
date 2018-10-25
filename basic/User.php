@@ -2,14 +2,14 @@
 namespace basic;
 
 /**
- * Aawdawd
+ * User Class
  */
 class User
 {
     /**
      * Register user
      *
-     * @return Boolean
+     * @return void
      */
     public function register()
     {
@@ -19,17 +19,13 @@ class User
     /**
      * Login user
      *
-     * @param String $username
-     * @param String $password
+     * @param  String $username
+     * @param  String $password
      *
-     * @return Boolean
+     * @return void
      */
     public function login($username, $password)
     {
         echo 'User login';
     }
 }
-
-$user = new User();
-$user->register();
-$user->login();
