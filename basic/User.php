@@ -7,13 +7,33 @@ namespace basic;
 class User
 {
     /**
+     * __construct
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        echo "Constructor called\n";
+    }
+
+    /**
      * Register user
      *
      * @return void
      */
     public function register()
     {
-        echo 'User registered';
+        echo "User registered\n";
+    }
+
+    /**
+     * __destruct
+     *
+     * @return void
+     */
+    public function __destruct()
+    {
+        echo "Desctruction called\n";
     }
 
     /**
@@ -26,6 +46,6 @@ class User
      */
     public function login($username, $password)
     {
-        echo 'User login';
+        $this->authenticate($username, $password);
     }
 }

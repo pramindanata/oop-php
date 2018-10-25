@@ -1,7 +1,8 @@
 <?php
+require './User.php';
 
-require('./User.php');
+use basic\User;
 
 $user = new User();
-$user->login();
 $user->register();
+$user->login('Eksa', 'uwu');
