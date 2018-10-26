@@ -1,8 +1,17 @@
 <?php
-require './User.php';
+require "./classes/User.php";
+require "./classes/Post.php";
 
-use basic\User;
+use Classes\User;
+use Classes\Post;
 
-$user = new User();
+$user = new User("Eksa", "uwu");
 $user->register();
-$user->login('Eksa', 'uwu');
+$user->login();
+
+$post = new Post();
+$post->name = 'Robbery';
+
+echo $post->name;
+
+var_dump(isset($post->name));
