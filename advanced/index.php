@@ -1,6 +1,5 @@
 <?php
-require "classes/Duck.php";
-require "classes/User.php";
+require_once __DIR__."/vendor/autoload.php";
 
 use Classes\Duck;
 use Classes\User;
