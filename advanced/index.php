@@ -3,6 +3,7 @@ require_once __DIR__."/vendor/autoload.php";
 
 use Classes\Duck;
 use Classes\User;
+use Classes\People;
 
 if (User::validatePassword("wosawo")) {
     echo "Password is valid";
@@ -21,3 +22,10 @@ $duck->color = 'White';
 
 $duck->describe();
 $duck->makeSound();
+
+$people = new People();
+$people->iterateObject();
+
+foreach ($people as $key => $value) {
+    echo "{$key} => {$value} <br />";
+}
