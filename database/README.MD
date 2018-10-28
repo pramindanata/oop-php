@@ -1,4 +1,4 @@
-# OOP PHP - Advanced
+# OOP PHP - Database
 Here, i implemented PDO and build a simple CRUD.
 
 ## Setup
