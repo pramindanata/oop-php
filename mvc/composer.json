@@ -1,0 +1,18 @@
+{
+    "name": "pramindanata/oop-php-mvc",
+    "authors": [
+        {
+            "name": "Eksa Pramindanata",
+            "email": "pramindanata.eksa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "utils/helper.php"  
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
