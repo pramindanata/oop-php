@@ -1,5 +1,6 @@
 # OOP PHP - Database
 Here, i implemented MVC with a simple CRUD.
+**Discontinue**
 
 ## Setup
 1. Run `composer dump-auto` in this directory via terminal to setup autoloader.
