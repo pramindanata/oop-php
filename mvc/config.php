@@ -8,4 +8,4 @@ define("DB_NAME", "shareboard");
 
 // URL
 define("ROOT_PATH", "/");
-define("ROOT_URL", "http://localhost:8000");
+define("ROOT_URL", "http://localhost/oop-php/mvc");

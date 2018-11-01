@@ -41,12 +41,14 @@ abstract class Controller
      * 
      * @return void 
      */
-    protected function returnView(Array $viewModel, Bool $fullView = false)
+    protected function returnView(Array $viewModel = null, Bool $fullView = false)
     {
-        $view = __DIR__."\\..\\View\\".get_class($this)."\\{$this->action}.php";
+        $class = new \ReflectionClass($this);
+        $class = strtolower($class->getShortName());
+        $view = __DIR__."\\..\\View\\{$class}\\{$this->action}.php";
 
         if ($fullView) {
-            require __DIR__."\\..\\Views\\main.php";
+            require __DIR__."\\..\\View\\main.php";
         } else {
             require $view;
         }

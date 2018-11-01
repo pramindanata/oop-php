@@ -8,4 +8,4 @@ define("DB_NAME", "your DB name");
 
 // URL
 define("ROOT_PATH", "/");
-define("ROOT_URL", "your URL, ex: `http://localhost:8000`");
+define("ROOT_URL", "your URL, ex: `http://localhost/php/mvc`");

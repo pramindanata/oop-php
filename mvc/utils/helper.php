@@ -1,6 +1,30 @@
 <?php
 
 /**
+ * Get assets file directory
+ * 
+ * @param String $location
+ * 
+ * @return String
+ */
+function asset($location)
+{
+    return ROOT_URL."/assets/{$location}";
+}
+
+/**
+ * Set url
+ * 
+ * @param String $uri
+ * 
+ * @return String
+ */
+function url(String $uri)
+{
+    return ROOT_URL."/{$uri}";
+}
+
+/**
  * Dump a variable as a JSON
  * 
  * @param mixed $var
